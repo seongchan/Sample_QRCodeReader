@@ -1,3 +1,6 @@
+소스 내에 별도의 명시가 없는 한 퍼블릭 도메인을 따릅니다. 
+
+------------------------------------------------------
 Copyright 2016 Hong SeongChan(seongchan116@gmail.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
