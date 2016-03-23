@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QRCodeRead</string>
+    <string name="description">QR 코드를 읽는 샘플입니다 </string>
+    <string name="read_qrcode">QR 코드 읽기</string>
+    <string name="result_title">QR 코드 값 </string>
+
 </resources>
