@@ -1,14 +1,10 @@
 package com.clipandbooks.sample.qrcodereader;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Display;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -37,15 +33,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         mResult.setText("");
         IntentIntegrator integrator = new IntentIntegrator(this);
         integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-
-        // QR Code Capture Activity Orientation Set : degree unit
-        integrator.setOrientation(90);
-
-        // Scan View finder size : pixel unit
-        integrator.addExtra(Intents.Scan.HEIGHT, 300);
-        integrator.addExtra(Intents.Scan.WIDTH, 300);
-
-        // Capture View Start :
         integrator.initiateScan();
     }
 
