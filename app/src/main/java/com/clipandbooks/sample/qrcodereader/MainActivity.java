@@ -45,7 +45,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         integrator.addExtra(Intents.Scan.HEIGHT, 300);
         integrator.addExtra(Intents.Scan.WIDTH, 300);
 
-        // Capture View Start
+        // Capture View Start :
         integrator.initiateScan();
     }
 
