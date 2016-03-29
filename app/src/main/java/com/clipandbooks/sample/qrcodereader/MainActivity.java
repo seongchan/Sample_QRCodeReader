@@ -33,6 +33,15 @@ public class MainActivity extends Activity implements View.OnClickListener{
         mResult.setText("");
         IntentIntegrator integrator = new IntentIntegrator(this);
         integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
+
+        // QR Code Capture Activity Orientation Set : degree unit
+        integrator.setOrientation(90);
+
+        // Scan View finder size : pixel unit
+        integrator.addExtra(Intents.Scan.HEIGHT, 300);
+        integrator.addExtra(Intents.Scan.WIDTH, 300);
+
+        // Capture View Start
         integrator.initiateScan();
     }
 
